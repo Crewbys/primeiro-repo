@@ -1,1 +1,21 @@
 print("Plano de dominação mundial iniciado...")
+import random
+import time
+
+insultos = [
+    "Seu calvo mental.",
+    "Tu parece erro 404 com corpo.",
+    "Quem te ensinou a existir, mano?",
+    "Parabéns, você respirou errado de novo.",
+    "Seu Pokémon sem evolução.",
+    "Tu é tipo Wi-Fi ruim: existe, mas atrapalha."
+]
+
+print("Iniciando insultos automáticos...")
+
+for i in range(10):
+    xingamento = random.choice(insultos)
+    print(f"{i+1}: {xingamento}")
+    time.sleep(1)
+
+print("\nProcesso concluído. Você foi insultado com sucesso")
